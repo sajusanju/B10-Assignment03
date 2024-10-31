@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- ? DaisyUI and Tailwind link -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- ? Font awesome link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+  <!-- ? google font link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          },
+          fontfamily:{
+            manrope: ["Manrope", "sans-serif"]
+          }
+        }
+      }
+    }
+  </script>
+  
+</head>
+<body class="font-manrope" >
+  <header class="bg-zinc-100">
+    <!-- ?navbar section start -->
+     <nav class="">
+      
+      <div class="navbar  flex justify-between mx-auto w-11/12 lg:w-10/12 lg:mx-auto lg:flex lg:justify-between items-center">
+        <div class="flex">
+          <div class="icon bg-lime-300 px-[12px] py-1 rounded-full "><i class="fa-solid fa-arrow-up-long rotate-45"></i></div>
+          <a class=" font-bold mx-2 text-2xl">Rinterio</a>
+        </div>
+
+        <div class="navbar-center hidden lg:flex ">
+          <ul class="flex gap-4 ">
+            <li>Home</li>
+            <li>About us</li>
+            <li>Home</li>
+            <li>Home</li>
+            <li>Home</li>
+          </ul>
+        </div>
+
+        <div class="hidden lg:flex gap-2 ">
+          <div class="icon rounded-full bg-white px-[15px] py-[10px] border-1 border"><i class="fa-solid fa-magnifying-glass"></i></div>
+          <div class="icon rounded-full bg-white px-[15px] py-[10px] border-1 border"><i class="fa-solid fa-cart-shopping"></i></div>
+          <div class="flex bg-lime-300 px-6 py-3 rounded-[50px] mx-2">
+            <button class="font-bold text-[24px]">Book Consult</button>
+            <div class="icon rounded-full bg-black text-white mx-2 px-[15px] py-[9px]"><i class="fa-solid fa-arrow-up-long rotate-45"></i></div>
+          </div>
+
+        </div>
+
+        <div class="lg:hidden flex justify-center items-center">
+         
+          <div class="dropdown dropdown-end">
+            <div tabindex="0" role="button" class=" ">
+              <div class="w-10 rounded-full">
+                <i class="fa-solid fa-bars"></i>
+              </div>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3  p-2 shadow">
+              <li>
+                <a>Home</a>
+              </li>
+              <li><a>Home</a></li>
+              <li><a>Home</a></li>
+              <li><a>Home</a></li>
+              <li><a>Home</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+     </nav>
+
+     <!-- ? navbar section ends---------------------- -->
+      <section class="hero">
+
+      </section>
+  </header>
+   
+</body>
+</html>
